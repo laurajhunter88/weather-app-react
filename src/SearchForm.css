@@ -1,0 +1,30 @@
+.SearchForm .search {
+  text-align: center;
+}
+
+.SearchForm .button {
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px #6bb0b7;
+  background-color: #096579;
+  color: white;
+  transition: all 200ms ease-in-out;
+  margin: 0 10px;
+}
+
+.SearchForm .button:hover {
+  background-color: white;
+  color: #096579;
+}
+
+.SearchForm .current-button {
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px #6bb0b7;
+  background-color: white;
+  color: #096579;
+  transition: all 200ms ease-in-out;
+}
+
+.SearchForm .current-button:hover {
+  background-color: #096579;
+  color: white;
+}

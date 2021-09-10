@@ -1,0 +1,14 @@
+.Footer {
+  color: #074259;
+  text-align: center;
+}
+
+.Footer #repository-link {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.Footer #repository-link:hover {
+  color: white;
+  background-color: #074259;
+}
