@@ -21,13 +21,13 @@ export default function TodayForecast() {
                 18
               </span>
               <span className="units">
-                <a href="#" className="temperature active" id="celsius-link">
+                <span href="#" className="temperature active" id="celsius-link">
                   °C
-                </a>
+                </span>
                 |
-                <a href="#" className="temperature" id="fahrenheit-link">
+                <span href="#" className="temperature" id="fahrenheit-link">
                   °F
-                </a>
+                </span>
               </span>
             </div>
           </div>
