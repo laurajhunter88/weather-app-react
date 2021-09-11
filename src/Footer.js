@@ -8,11 +8,11 @@ export default function Footer() {
         <a
           id="repository-link"
           target="blank"
-          href="https://github.com/laurajhunter88/Weather-App"
+          href="https://github.com/laurajhunter88/weather-app-react"
         >
           Open Source Code
         </a>
-        <span> by Laura Hunter</span>
+        <span> created by Laura Hunter</span>
       </footer>
     </div>
   );
