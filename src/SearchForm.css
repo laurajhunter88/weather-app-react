@@ -1,3 +1,13 @@
+.container.search {
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  border-color: white;
+  border-style: solid;
+  box-shadow: 5px 5px 20px #6bb0b7;
+}
+
 .SearchForm .search {
   text-align: center;
 }

@@ -3,8 +3,7 @@ h3 {
   color: #074259;
   font-size: 16px;
   font-weight: bold;
-  margin: 10px 0;
-  padding-left: 10px;
+  margin-top: 10px;
 }
 
 h4 {
@@ -12,8 +11,6 @@ h4 {
   color: #074259;
   font-family: "Rajdhani", sans-serif;
   text-transform: capitalize;
-  padding-left: 10px;
-  margin-top: 10px;
 }
 
 a {
@@ -22,13 +19,17 @@ a {
   background-color: transparent;
 }
 
+.float-left {
+  float: left;
+  display: block;
+}
+
 .card-title {
   text-align: center;
   font-size: 44px;
   color: #074259;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .temp {
@@ -88,7 +89,6 @@ a {
   font-family: "Rajdhani", sans-serif;
   margin: 0 0 10px;
   list-style: none;
-  padding-left: 180px;
   font-style: italic;
 }
 

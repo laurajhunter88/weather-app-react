@@ -16,7 +16,7 @@ export default function TodayForecast() {
               Last updated: Saturday 18:40
             </h3>
             <h4 id="current-description">broken clouds</h4>
-            <div>
+            <div className="float-left">
               <span className="temp" id="current-temp">
                 18
               </span>
