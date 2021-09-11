@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./TodayForecast.css";
 
-export default function TodayForecast() {
+export default function TodayForecast(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
@@ -73,7 +73,7 @@ export default function TodayForecast() {
   } else {
     const apiKey = "0b02db9e81bd4747b05a8fe268d2b9a4";
     let units = "&units=metric";
-    let city = "London";
+    let city = "props.defaultCity";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}${units}`;
     axios.get(apiUrl).then(handleResponse);
 

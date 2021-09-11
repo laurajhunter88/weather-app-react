@@ -7,9 +7,9 @@ export default function Cards() {
   return (
     <div className="Cards">
       <div className="card inner">
-        <TodayForecast />
+        <TodayForecast defaultCity="London" />
       </div>
-      <WeekForecast />
+      <WeekForecast defaultCity="London" />
     </div>
   );
 }
