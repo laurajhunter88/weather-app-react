@@ -20,14 +20,3 @@ h1 {
 
   max-width: 100%;
 }
-
-.Cards .card.inner {
-  border-radius: 15px;
-  width: 550px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-color: #074259;
-  border-style: solid;
-}

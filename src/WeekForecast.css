@@ -36,3 +36,11 @@
   display: block;
   margin: 0 auto;
 }
+
+.day-name {
+  font-family: "Rajdhani", sans-serif;
+  color: #074259;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
