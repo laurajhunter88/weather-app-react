@@ -11,8 +11,8 @@ export default function SearchForm() {
             id="search-bar"
             type="search"
             placeholder="Enter City here..."
-            autofocus="on"
-            autocomplete="off"
+            autoFocus="on"
+            autoComplete="off"
           />
           <input
             className="button mx-2"

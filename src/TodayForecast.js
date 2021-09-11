@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./TodayForecast.css";
 
 export default function TodayForecast(props) {
@@ -10,7 +11,7 @@ export default function TodayForecast(props) {
       ready: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      date: "Wednesday 07:00",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "",
       wind: response.data.wind.speed,
@@ -30,7 +31,7 @@ export default function TodayForecast(props) {
             </div>
             <div className="col-6">
               <h3 className="today-date" id="current-date">
-                Last updated: {weatherData.date}
+                Last updated: <FormattedDate date={weatherData.date} />
               </h3>
               <h4 id="current-description">{weatherData.description}</h4>
               <div className="float-left">
@@ -73,8 +74,8 @@ export default function TodayForecast(props) {
   } else {
     const apiKey = "0b02db9e81bd4747b05a8fe268d2b9a4";
     let units = "&units=metric";
-    let city = "props.defaultCity";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}${units}`;
+
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}${units}`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
