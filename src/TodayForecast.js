@@ -1,7 +1,6 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
-import FormattedDate from "./FormattedDate";
-
+import TodayWeatherIcon from "./TodayWeatherIcon";
+import TodayFormattedDate from "./TodayFormattedDate";
 import "./TodayForecast.css";
 
 export default function TodayForecast(props) {
@@ -16,7 +15,7 @@ export default function TodayForecast(props) {
           </div>
           <div className="col-6">
             <h3 className="today-date" id="current-date">
-              <FormattedDate date={props.data.date} />
+              <TodayFormattedDate date={props.data.date} />
             </h3>
             <h4 id="current-description">{props.data.description}</h4>
             <div className="float-left">
@@ -37,7 +36,7 @@ export default function TodayForecast(props) {
 
           <div className="col-6">
             <div id="weather-icon">
-              <WeatherIcon
+              <TodayWeatherIcon
                 code={props.data.icon}
                 alt={props.data.description}
               />

@@ -32,7 +32,7 @@ a {
   font-size: 44px;
   color: #074259;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #current-temp {
@@ -74,9 +74,10 @@ a {
   font-size: 16px;
   color: #074259;
   font-family: "Rajdhani", sans-serif;
-  margin-top: 20px;
+  margin-top: 35px;
   list-style: none;
   font-style: italic;
+  padding-left: 10px;
 }
 
 #weather-icon canvas {
