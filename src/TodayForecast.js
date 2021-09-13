@@ -1,6 +1,7 @@
 import React from "react";
 import TodayWeatherIcon from "./TodayWeatherIcon";
 import TodayFormattedDate from "./TodayFormattedDate";
+import TodayUnitConversion from "./TodayUnitConversion";
 import "./TodayForecast.css";
 
 export default function TodayForecast(props) {
@@ -18,20 +19,7 @@ export default function TodayForecast(props) {
               <TodayFormattedDate date={props.data.date} />
             </h3>
             <h4 id="current-description">{props.data.description}</h4>
-            <div className="float-left">
-              <span className="temp" id="current-temp">
-                {Math.round(props.data.temperature)}
-              </span>
-              <span className="units">
-                <span href="#" className="temperature active" id="celsius-link">
-                  °C
-                </span>
-                |
-                <span href="#" className="temperature" id="fahrenheit-link">
-                  °F
-                </span>
-              </span>
-            </div>
+            <TodayUnitConversion celsius={props.data.temperature} />
           </div>
 
           <div className="col-6">

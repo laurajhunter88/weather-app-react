@@ -22,51 +22,12 @@ a {
   background-color: transparent;
 }
 
-.float-left {
-  float: left;
-  display: block;
-}
-
 .card-title {
   text-align: center;
   font-size: 44px;
   color: #074259;
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;
-}
-
-#current-temp {
-  text-align: center;
-  font-size: 86px;
-  color: #074259;
-  font-family: "Rajdhani", sans-serif;
-  margin-top: 50px;
-  padding-right: 8px;
-}
-
-.temperature {
-  color: #6bb0b7;
-  text-decoration: none;
-}
-
-.temperature:hover {
-  text-decoration: underline;
-}
-
-.active {
-  color: #074259;
-  cursor: default;
-  text-decoration: none;
-}
-
-.active:hover {
-  color: #074259;
-  text-decoration: none;
-}
-
-.units {
-  position: relative;
-  top: -40px;
 }
 
 .weather-info {
@@ -83,6 +44,5 @@ a {
 #weather-icon canvas {
   display: block;
   margin: 0 auto;
-
   margin-bottom: 20px;
 }
