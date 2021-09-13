@@ -70,7 +70,7 @@ export default function SearchForm(props) {
             <TodayForecast data={weatherData} />
           </div>
           <div className="weekCard">
-            <WeekForecast data={weatherData} />
+            {/*<WeekForecast data={weatherData} />*/}
           </div>
         </div>
       </div>
