@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./SearchForm.css";
 import TodayForecast from "./TodayForecast";
-import WeekForecast from "./WeekForecast";
+
+/*import WeekForecast from "./WeekForecast";*/
 
 export default function SearchForm(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
