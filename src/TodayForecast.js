@@ -1,5 +1,5 @@
 import React from "react";
-import TodayWeatherIcon from "./TodayWeatherIcon";
+import WeatherIcon from "./WeatherIcon";
 import TodayFormattedDate from "./TodayFormattedDate";
 import TodayUnitConversion from "./TodayUnitConversion";
 import "./TodayForecast.css";
@@ -24,9 +24,10 @@ export default function TodayForecast(props) {
 
           <div className="col-6">
             <div id="weather-icon">
-              <TodayWeatherIcon
+              <WeatherIcon
                 code={props.data.icon}
                 alt={props.data.description}
+                size={120}
               />
             </div>
             <ul className="weather-info">

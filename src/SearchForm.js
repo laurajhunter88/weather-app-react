@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./SearchForm.css";
 import TodayForecast from "./TodayForecast";
-
-/*import WeekForecast from "./WeekForecast";*/
+import WeekForecast from "./WeekForecast";
 
 export default function SearchForm(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -18,6 +17,7 @@ export default function SearchForm(props) {
       icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
       city: response.data.name,
+      coordinates: response.data.coord,
     });
   }
 
@@ -71,7 +71,7 @@ export default function SearchForm(props) {
             <TodayForecast data={weatherData} />
           </div>
           <div className="weekCard">
-            {/*<WeekForecast data={weatherData} />*/}
+            <WeekForecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>
