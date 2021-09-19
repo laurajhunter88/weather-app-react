@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import WeatherIcon from "./WeatherIcon";
-/*import WeekFormattedDate from "./WeekFormattedDate";*/
+
 import "./WeekForecast.css";
 import axios from "axios";
+import WeekForecastDay from "./WeekForecastDay";
 
 export default function WeekForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
   function displayForecast(response) {
-    setLoaded(true);
     setForecast(response.data.daily);
+    setLoaded(true);
   }
 
   if (loaded) {
@@ -21,19 +21,7 @@ export default function WeekForecast(props) {
             <div className="weather-forecast" id="forecast">
               <div className="row forecast-row">
                 <div className="col-2">
-                  <div className="day-name">
-                    {forecast[0].dt}
-                    {/*<WeekFormattedDate date={props.data.date} />*/}
-                  </div>
-                  <div className="WeekForecastIcon">
-                    <WeatherIcon code={forecast[0].weather[0].icon} size={50} />
-                  </div>
-                  <span className="forecast-temp" id="forecast-temp-max">
-                    {Math.round(forecast[0].temp.max)}°C /
-                  </span>
-                  <span className="forecast-temp" id="forecast-temp-min">
-                    {Math.round(forecast[0].temp.min)}°C
-                  </span>
+                  <WeekForecastDay data={forecast[0]} />
                 </div>
               </div>
             </div>
