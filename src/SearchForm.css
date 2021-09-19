@@ -5,7 +5,7 @@
   padding: 30px;
   border-color: white;
   border-style: solid;
-  box-shadow: 5px 5px 20px #6bb0b7;
+  box-shadow: 5px 5px 20px #ed9b7d;
   border-radius: 5px;
   margin-top: 20px;
 }
@@ -16,8 +16,8 @@
 
 .SearchForm .button {
   border-radius: 7px;
-  box-shadow: 5px 5px 10px #6bb0b7;
-  background-color: #096579;
+  box-shadow: 5px 5px 10px #ed9b7d;
+  background-color: #a84a28;
   color: white;
   transition: all 200ms ease-in-out;
   margin: 0 10px;
@@ -25,19 +25,19 @@
 
 .SearchForm .button:hover {
   background-color: white;
-  color: #096579;
+  color: #a84a28;
 }
 
 .SearchForm .current-button {
   border-radius: 7px;
-  box-shadow: 5px 5px 10px #6bb0b7;
+  box-shadow: 5px 5px 10px #ed9b7d;
   background-color: white;
-  color: #096579;
+  color: #a84a28;
   transition: all 200ms ease-in-out;
 }
 
 .SearchForm .current-button:hover {
-  background-color: #096579;
+  background-color: #a84a28;
   color: white;
 }
 

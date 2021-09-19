@@ -1,7 +1,9 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
+import "./WeekForecast.css";
 
 export default function WeekForecastDay(props) {
+  console.log(props.data);
   function maxTemperature() {
     let maxTemp = Math.round(props.data.temp.max);
     return `${maxTemp}°C`;
