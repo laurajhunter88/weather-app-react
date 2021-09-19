@@ -36,5 +36,7 @@ export default function WeekForecast(props) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}${unit}`;
 
     axios.get(apiUrl).then(displayForecast);
+
+    return null;
   }
 }
