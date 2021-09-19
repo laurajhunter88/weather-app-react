@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./WeekForecast.css";
 import axios from "axios";
 import WeekForecastDay from "./WeekForecastDay";

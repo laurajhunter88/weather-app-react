@@ -1,22 +1,36 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
-/*import WeekFormattedDate from "./WeekFormattedDate";*/
 
 export default function WeekForecastDay(props) {
+  function maxTemperature() {
+    let maxTemp = Math.round(props.data.temp.max);
+    return `${maxTemp}°C`;
+  }
+
+  function minTemperature() {
+    let minTemp = Math.round(props.data.temp.min);
+    return `${minTemp}°C`;
+  }
+
+  function day() {
+    let date = new Date(props.data.dt * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+  }
+
   return (
     <div className="WeekForecastDay">
-      <div className="day-name">
-        {props.data.dt}
-        {/*<WeekFormattedDate date={props.data.date} />*/}
-      </div>
+      <div className="day-name">{day()}</div>
       <div className="WeekForecastIcon">
         <WeatherIcon code={props.data.weather[0].icon} size={50} />
       </div>
       <span className="forecast-temp" id="forecast-temp-max">
-        {Math.round(props.data.temp.max)}°C /
+        {maxTemperature()}
       </span>
       <span className="forecast-temp" id="forecast-temp-min">
-        {Math.round(props.data.temp.min)}°C
+        {minTemperature()}
       </span>
     </div>
   );
