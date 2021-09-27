@@ -2,20 +2,18 @@ h1 {
   text-align: center;
   padding: 10px 20px;
   font-size: 56px;
-  color: #a84a28;
+  color: #074259;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   margin: 30px 0;
 }
 
 .CardBody {
-  background-color: white;
   margin: 30px auto;
   width: 100%;
   display: block;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-color: #ed9b7d;
-  border-style: solid;
   max-width: 100%;
+  border: 1px solid black;
 }

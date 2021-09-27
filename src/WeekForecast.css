@@ -6,8 +6,8 @@
   margin-right: 30px;
   margin-bottom: 50px;
   max-width: 100%;
-  border-color: #074259;
-  border-style: solid;
+  border: 1px solid black;
+  box-shadow: 5px 5px 20px grey;
 }
 
 .forecast-row {
@@ -16,19 +16,22 @@
 
 .forecast-temp {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #074259;
   font-family: "Rajdhani", sans-serif;
-  display: block;
-  margin: 0 auto;
+  display: inline;
+  justify-content: space-evenly;
 }
 
 #forecast-temp-max {
   font-weight: bolder;
+  margin-right: 5px;
+  margin-left: 13px;
 }
 
 #forecast-temp-min {
   opacity: 0.7;
+  margin-left: 5px;
 }
 
 canvas {
@@ -39,7 +42,7 @@ canvas {
 .day-name {
   font-family: "Rajdhani", sans-serif;
   color: #074259;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
 }

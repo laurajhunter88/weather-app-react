@@ -22,9 +22,13 @@ a {
   background-color: transparent;
 }
 
+.todayCard {
+  background-color: white;
+}
+
 .card-title {
   text-align: center;
-  font-size: 44px;
+  font-size: 56px;
   color: #074259;
   font-family: "Poppins", sans-serif;
   margin-bottom: 30px;

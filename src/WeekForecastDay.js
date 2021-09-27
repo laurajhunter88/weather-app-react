@@ -3,7 +3,6 @@ import WeatherIcon from "./WeatherIcon";
 import "./WeekForecast.css";
 
 export default function WeekForecastDay(props) {
-  console.log(props.data);
   function maxTemperature() {
     let maxTemp = Math.round(props.data.temp.max);
     return `${maxTemp}°C`;
@@ -31,6 +30,7 @@ export default function WeekForecastDay(props) {
       <span className="forecast-temp" id="forecast-temp-max">
         {maxTemperature()}
       </span>
+
       <span className="forecast-temp" id="forecast-temp-min">
         {minTemperature()}
       </span>
