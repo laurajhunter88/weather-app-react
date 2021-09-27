@@ -1,28 +1,32 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import TodayFormattedDate from "./TodayFormattedDate";
-import TodayUnitConversion from "./TodayUnitConversion";
+
 import "./TodayForecast.css";
 
 export default function TodayForecast(props) {
+  console.log(props.data);
   return (
     <div className="TodayForecast">
       <div className="card-body">
         <div className="row">
-          <div className="col-12">
+          <div className="col-md-12">
             <h2 className="card-title" id="city-name">
               {props.data.city}
             </h2>
           </div>
-          <div className="col-6">
+          <div className="col-md-6">
             <h3 className="today-date" id="current-date">
               <TodayFormattedDate date={props.data.date} />
             </h3>
             <h4 id="current-description">{props.data.description}</h4>
-            <TodayUnitConversion celsius={props.data.temperature} />
+            <div className="WeatherTemp float-left">
+              <span className="temp">{Math.round(props.data.temperature)}</span>
+              <span className="units">°C</span>
+            </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-md-6">
             <div id="weather-icon">
               <WeatherIcon
                 code={props.data.icon}

@@ -17,3 +17,14 @@ h1 {
   max-width: 100%;
   border: 1px solid black;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 38px;
+    margin: 15px 0;
+  }
+
+  .CardBody {
+    padding-bottom: 20px;
+  }
+}

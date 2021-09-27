@@ -1,6 +1,7 @@
 .Footer {
   color: #074259;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .Footer #repository-link {

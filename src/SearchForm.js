@@ -57,13 +57,6 @@ export default function SearchForm(props) {
               type="submit"
               value="Search"
             />
-
-            <input
-              className="current-button"
-              id="current-button"
-              type="submit"
-              value="Current Location"
-            />
           </form>
         </div>
         <div className="Cards">

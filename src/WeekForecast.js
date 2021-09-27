@@ -36,7 +36,7 @@ export default function WeekForecast(props) {
                 {forecast.map(function (dailyForecast, index) {
                   if (index >= 1 && index <= 6) {
                     return (
-                      <div className="col-2" key={index}>
+                      <div className="col-md-2" key={index}>
                         <WeekForecastDay data={dailyForecast} />
                       </div>
                     );
